@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Style tech rectangulaire - Suppression de tous les arrondis */
+* {
+  border-radius: 0 !important;
+}
+
+/* Dégradé orangé horizontal subtil - De droite vers la gauche - APPLIQUÉ PARTOUT */
+.gradient-bg {
+  background: linear-gradient(to left, 
+    #FFF4ED 0%,
+    #FFF8F4 25%,
+    #FFFCFA 50%,
+    #FFFEFE 75%,
+    #FFFFFF 100%
+  );
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Classes utilitaires pour les titres avec Bebas Neue et ombres */
+.title-hero {
+  font-family: 'Bebas Neue', cursive;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title-section {
+  font-family: 'Bebas Neue', cursive;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.button-primary {
+  font-family: 'Bebas Neue', cursive;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Popup de vérification d'âge avec fond flouté */
+.age-verification-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.age-verification-modal {
+  background: white;
+  padding: 24px;
+  border-radius: 0;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  max-width: 380px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+}
